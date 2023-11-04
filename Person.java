@@ -1,21 +1,16 @@
 public class Person {
-    private int id;
-    private String name;
-    private int age;
-    private boolean parent_Permission;
+     int id;
+     String name="unknown";
+     int age;
+     boolean parent_Permission=true;
 
-    public Person(int id, String name, int age, boolean parent_Permission) {
-        this.id = id;
+    public Person(String name, int age, boolean parent_Permission) {
         this.name = name;
         this.age = age;
         this.parent_Permission = parent_Permission;
     }
 
-    public Person(int id, int age) {
-        this(id, "unknown", age, true);
-    }
-
-    public int getId() {
+      public int getId() {
         return id;
     }
 
