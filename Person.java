@@ -1,11 +1,14 @@
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 public  class Person implements Nameable{
     int id;
     String name="unknown";
      int age;
     boolean parent_Permission=true;
+
     private List<Rental> rentals;
     public Person() {
         this.name = name;
@@ -26,8 +29,9 @@ public  class Person implements Nameable{
         this.age = age;
         this.parent_Permission = parent_Permission;
     }
-    public int getId() {
 
+      public int getId() {
+ 
         return id;
     }
 

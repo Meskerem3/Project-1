@@ -11,10 +11,10 @@ public class Student extends Person {
     }
 
 
-    public Student(String name, int age, boolean parent_permission) {
-        super( name, age, parent_permission);
-        this.classroom = classroom;
-    }
+
+ 
+
+
     public void setClassroom(Classroom classroom) {
         this.classroom = classroom;
         classroom.addStudent(this); // Adding student to the classroom
@@ -23,6 +23,12 @@ public class Student extends Person {
 
     public boolean canUseServices() {
         return true;
+ 
+
+       public Student(int id, String name, int age, boolean parentPermission, String classroom) {
+        super(id, name, age, parentPermission);
+        this.classroom = classroom;
+ 
     }
 }
 
