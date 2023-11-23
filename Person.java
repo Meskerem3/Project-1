@@ -1,18 +1,34 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 public  class Person implements Nameable{
     int id;
     String name="unknown";
      int age;
     boolean parent_Permission=true;
+
+    private List<Rental> rentals;
+    public Person() {
+        this.name = name;
+        this.rentals = new ArrayList<>();
+    }
+
+    // Setter and Getter for has-many relationship (rentals)
+    public void addRental(Rental rental) {
+        rentals.add(rental);
+    }
+
+    public List<Rental> getRentals() {
+        return rentals;
+    }
+
     public Person(String name, int age, boolean parent_Permission) {
         this.name = name;
         this.age = age;
         this.parent_Permission = parent_Permission;
     }
- 
-    public int getId() {
-
- 
 
       public int getId() {
  
